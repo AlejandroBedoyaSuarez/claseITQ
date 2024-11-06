@@ -16,22 +16,35 @@ public class deber5 {
                 "7.12345\r\n" + //
                 "7.123456");
 
-        // tendremos que hacer un acumulador
-        //Hacemos String ya que queremos que solo cambie el decimal
-        String numeroBase = "7."; 
-        //hacemos el acumulador
-        String acumulador = numeroBase; 
-        //creamos ciclo for con la siguiente condición:
-        // int i = valor inicial ; i debe ser menor o igual a 15 y debe sumar de uno en uno
-        for (int i = 1; i <= 15; i++) {
-            //gracias a esto, el acumulador puede ir sumando de uno en uno ya que i = 1
-            acumulador += i; 
-            /*se vería así: "7." + 1 = 7.1
-            Luego sería "7.1" + 1 = 7.12 
-            Luego sería "7.12" + 1 = 7.123
-            */
-            //Respuesta final
-            System.out.println(acumulador); 
+        Scanner decision = new Scanner(System.in);
+        System.out.println("Escriba 'si' para usar un número propio o 'no' para usar el número default:");
+        String datoUsuario = decision.nextLine();
+
+        if (datoUsuario.equals("no")) {
+            // Usamos el número base "7." y acumulamos dígitos del 1 al 15
+            String numeroBase = "7.";
+            String acumulador = numeroBase;
+
+            // Bucle para agregar decimales del 1 al 15
+            for (int i = 1; i <= 15; i++) {
+                acumulador += i; // Agrega el siguiente dígito
+                System.out.println(acumulador);
+            }
+        } else if (datoUsuario.equals("si")) {
+            System.out.println("Escriba el número:");
+            String numeroUsuario = decision.nextLine();
+            String acumulador = numeroUsuario + ".";
+
+            // Bucle para agregar decimales del 1 al 15 al número personalizado
+            for (int i = 1; i <= 15; i++) {
+                acumulador += i;
+                System.out.println(acumulador);
+            }
+        } else {
+            System.out.println("Opción no válida. Por favor, ingrese 'si' o 'no'.");
         }
+
+        decision.close(); // Cerramos el Scanner 
     }
+
 }
