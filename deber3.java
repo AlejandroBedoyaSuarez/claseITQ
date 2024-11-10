@@ -12,6 +12,8 @@ public class deber3 {
         // fecha actual
         System.out.println(fechaActual);
 
+        System.out.println("Realizado por Alejandro Bedoya");
+
         // Creamos el objeto
         Scanner scansito = new Scanner(System.in);
         // Damos la instrucción al usuario

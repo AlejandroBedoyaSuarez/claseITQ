@@ -6,6 +6,9 @@ public class deber6 {
         Date fechaActual = new Date();
         // fecha actual
         System.out.println(fechaActual);
+       
+        System.out.println("Realizado por Alejandro Bedoya");
+       
         // Instrucción
         System.out.println(
                 "Programa que permita dar las respuestas de las variables x and y en un sistema de ecuaciones lineales");

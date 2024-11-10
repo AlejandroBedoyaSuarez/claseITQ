@@ -6,6 +6,9 @@ public class deber4 {
         Date fechaActual = new Date();
         // fecha actual
         System.out.println(fechaActual);
+
+        System.out.println("Realizado por Alejandro Bedoya");
+
         // Instrucción
         System.out.println(
                 " Escriba un programa para calcular la longitud de la circunferencia y el área del círculo\r\n" + //
@@ -28,10 +31,7 @@ public class deber4 {
         double datosArea = pi * Math.pow(datosRadio, 2);
 
         // Resultado
-        System.out
-                .println("La Longitud del círculo es : " + datosLongitud + " y el área del círculo es : " + datosArea);
-
-        // cerramos scan
+        System.out.println("La Longitud del círculo es : " + datosLongitud + " y el área del círculo es : " + datosArea);
         scansote.close();
     }
 }

@@ -5,6 +5,8 @@ public class deber {
         System.out.println("Variables Correctas");
         Date fechaActual = new Date();
         System.out.println(fechaActual);
+        System.out.println("Realizado por Alejandro Bedoya");
+
         int n = 123;
         int miProblema = 123;
         int MiJuego = 123;

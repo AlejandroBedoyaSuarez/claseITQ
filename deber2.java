@@ -6,6 +6,13 @@ public class deber2 {
     // Main es donde el programa empieza a ejecutarse, basicamente todo lo que está
     // dentro del método main es lo que hará el programa
     public static void main(String[] args) {
+
+        Date fechaDeber= new Date();
+        System.out.println(fechaDeber);
+
+        System.out.println("Realizado por Alejandro Bedoya");
+
+
         System.out.println("Escribir un programa que lea un entero, lo multiplique por 2 y a continuación lo\r\n" + //
                 "escriba de nuevo en la pantalla (la variable debe llevar las iniciales de su nombre).");
 

@@ -6,6 +6,9 @@ public class deber5 {
         Date fechaActual = new Date();
         // fecha actual
         System.out.println(fechaActual);
+
+        System.out.println("Realizado por Alejandro Bedoya");
+
         // Instrucción
         System.out.println(" Escribir un programa que visualice valores\r\n" + //
                 "tales como:\r\n" + //
@@ -44,7 +47,7 @@ public class deber5 {
             System.out.println("Opción no válida. Por favor, ingrese 'si' o 'no'.");
         }
 
-        decision.close(); // Cerramos el Scanner 
+        decision.close(); // Cerramos el Scanner
     }
 
 }
